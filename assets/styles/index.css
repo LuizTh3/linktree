@@ -4,11 +4,9 @@
     Edite as cores aqui!
     ========================================= */
 :root {
-    --bg-top: #3651bc;      /* Vermelho mais claro (topo) */
-    --bg-bottom: #262ba0;   /* Vermelho escuro (fundo) */
+    --bg-top: #3651bc;   
+    --bg-bottom: #262ba0;   
     --text-color: #ffffff;  /* Cor do texto */
-    --btn-border: rgba(255, 255, 255, 0.4); /* Borda dos botões */
-    --btn-hover: rgba(255, 255, 255, 0.1);  /* Cor ao passar o mouse */
 }
 
 /* Reset Básico */
@@ -101,48 +99,74 @@ header {
 /* Lista de Links */
 .links-container {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 16px; /* Espaço entre botões */
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 15px; /* Espaço entre botões */
 }
 
 .section-title {
     text-align: center;
-    margin-bottom: 20px;
-    font-weight: 600;
+    margin-bottom: 8px;
+    font-weight: 700;
     text-transform: uppercase;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     letter-spacing: 1px;
 }
+.sub-title {
+    text-align: center;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
 
-/* O Botão Linktree */
+.section-title-rodape {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 8px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+.sub-title-rodape {
+    text-align: center;
+    font-weight: 500;
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+/* O Botão */
 .link-btn {
     display: flex;
-    align-items: center; /* Alinha verticalmente */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
     color: white;
-    border: 1px solid var(--btn-border);
-    padding: 4px; /* Padding pequeno pois a imagem define a altura */
-    border-radius: 50px; /* Borda redonda total */
+    border-radius: 16px;
+    padding: 8px 8px 8px 8px;
     transition: transform 0.2s, background 0.3s, border-color 0.3s;
-    background: transparent;
+    aspect-ratio: 1 / 1;
     position: relative;
 }
 
 .link-btn:hover {
     background-color: var(--btn-hover);
-    transform: scale(1.02); /* Cresce levemente */
+    transform: translate(-5px); 
     border-color: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
-/* Imagem pequena dentro do botão (lado esquerdo) */
+
 .link-thumb {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
     overflow: hidden;
-    flex-shrink: 0; /* Impede que a imagem encolha */
-    border: 1px solid rgba(255,255,255,0.3);
+    margin-bottom: 12px;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
 }
 
 .link-thumb img {
@@ -153,25 +177,16 @@ header {
 
 /* Texto do botão */
 .link-text {
-    flex-grow: 1; /* Ocupa o espaço restante */
     text-align: center;
-    font-weight: 500;
-    font-size: 0.95rem;
-    padding: 0 10px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    line-height: 1.2;
     text-shadow: 0 1px 2px rgba(0,0,0,0.2);
-}
-
-/* Ícone de "ação" (três pontinhos) no final */
-.link-action {
-    width: 30px;
-    text-align: center;
-    opacity: 0.6;
-    font-size: 0.8rem;
 }
 
 /* Rodapé Social */
 .social-footer {
-    margin-top: 40px;
+    margin-top: 20px;
     display: flex;
     gap: 25px;
     font-size: 1.5rem;
@@ -208,10 +223,96 @@ header {
     background-color: #f0f0f0;
 }
 
-/* Estilo para links sem imagem (opcional) */
+
 .no-img-thumb {
     background: rgba(255,255,255,0.2);
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.collaborator-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin: 20px;
+}
+
+/* O Cartão agora é um link (a) */
+.collab-card {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border-radius: 20px; 
+    padding: 10px 15px; 
+    display: flex;
+    justify-content: space-between; /* Garante que um vai para cada ponta */
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+    text-decoration: none; 
+    color: inherit; 
+    cursor: pointer;
+}
+
+.collab-card:hover {
+    transform: translateY(-2px);
+}
+
+.collab-profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.collab-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #f0f0f0;
+}
+
+.collab-info {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+.collab-info h3 {
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #0f172a;
+    font-weight: 700;
+    margin: 0;
+}
+
+.collab-info span {
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #64748b;
+    font-weight: 400;
+}
+
+/* O Ícone Verde (Visual apenas) */
+.whatsapp-icon {
+    width: 32px;
+    height: 32px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 18px; /* Ajustei levemente o tamanho do ícone interno */
+    box-shadow: 0 2px 5px rgba(37, 211, 102, 0.3);
+    transition: background-color 0.3s;
+}
+
+/* Efeito Hover no card inteiro muda a cor do ícone também */
+.collab-card:hover .whatsapp-icon {
+    background-color: #1ebe57;
 }

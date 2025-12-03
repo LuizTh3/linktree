@@ -189,28 +189,10 @@ header {
     text-shadow: 0 1px 2px rgba(0,0,0,0.2);
 }
 
-/* Rodapé Social */
-.social-footer {
-    margin-top: 20px;
-    display: flex;
-    gap: 25px;
-    font-size: 1.5rem;
-    display: -webkit-box;
-}
-
-.social-footer a {
-    color: white;
-    transition: transform 0.3s, color 0.3s;
-}
-
-.social-footer a:hover {
-    transform: scale(1.2);
-    color: #fbbf24; /* Amarelo no hover */
-}
-
 .footer-logo {
-    margin-top: 30px;
-    margin-bottom: 20px;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 40px;
 }
 
 .cta-btn {
@@ -377,4 +359,40 @@ header {
     line-height: 1.4;
 }
 
-/* Pequeno ajuste no CSS antigo para remover estilos da imagem que não existem mais */
+.social-vertical-list {
+    display: flex;
+    flex-direction: column; /* Empilha um embaixo do outro */
+    gap: 15px;              /* Espaço entre os botões */
+    width: 100%;            /* Ocupa a largura disponível */
+    margin-top: 20px;
+}
+
+/* O estilo do botão (Cópia adaptada do .cta-btn) */
+.social-pill-btn {
+    background-color: white;
+    color: #333; /* Texto escuro */
+    text-decoration: none;
+    padding: 15px 24px;
+    border-radius: 30px; /* Bordas bem redondas igual ao footer-logo */
+    font-weight: bold;
+    font-size: 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.2s, background-color 0.3s;
+    
+    /* Organização interna (Ícone + Texto) */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza tudo no meio do botão */
+    gap: 12px; /* Distância entre o ícone e o nome */
+}
+
+/* Efeito ao passar o mouse */
+.social-pill-btn:hover {
+    background-color: #f9f9f9;
+    transform: translateY(-2px); /* Leve subida */
+}
+
+/* Aumentar um pouco o ícone dentro desse botão */
+.social-pill-btn i {
+    font-size: 1.4rem;
+}

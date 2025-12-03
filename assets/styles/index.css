@@ -141,7 +141,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     text-decoration: none;
     color: white;
     border-radius: 16px;
@@ -162,6 +162,7 @@ header {
 
 .link-thumb {
     width: 100%;
+    height: 75%;
     flex: 1;
     border-radius: 12px;
     overflow: hidden;
@@ -179,9 +180,11 @@ header {
 
 /* Texto do botão */
 .link-text {
+    width: 100%;
+    height: 25%;
     text-align: center;
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     line-height: 1.2;
     text-shadow: 0 1px 2px rgba(0,0,0,0.2);
 }
@@ -225,7 +228,6 @@ header {
 .cta-btn:hover {
     background-color: #f0f0f0;
 }
-
 
 .no-img-thumb {
     background: rgba(255,255,255,0.2);
@@ -319,3 +321,60 @@ header {
 .collab-card:hover .whatsapp-icon {
     background-color: #1ebe57;
 }
+
+.info-card {
+    background-color: #ffffff;
+    width: 100%;
+    border-radius: 24px; /* Bordas bem arredondadas */
+    padding: 35px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* Sombra suave para destacar do fundo */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    margin-top: -10px; 
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+/* O quadrado rosa do ícone */
+.card-icon-container {
+    background: linear-gradient(135deg, #ff4b7d, #e93a63);
+    width: 70px;
+    height: 70px;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(233, 58, 99, 0.3);
+}
+
+/* O ícone dentro do quadrado rosa */
+.card-icon-container i {
+    color: white;
+    font-size: 28px;
+}
+
+/* Título principal do card */
+.card-title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1e293b; /* Cor escura (quase preto) */
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+/* Subtítulo do card */
+.card-subtitle {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #64748b; /* Cor cinza azulado */
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+/* Pequeno ajuste no CSS antigo para remover estilos da imagem que não existem mais */

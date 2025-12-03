@@ -323,7 +323,7 @@ header {
 
 /* O quadrado rosa do ícone */
 .card-icon-container {
-    background: linear-gradient(135deg, #ff4b7d, #e93a63);
+    background: linear-gradient(135deg, #ff7b00, #ffad50);
     width: 70px;
     height: 70px;
     border-radius: 18px;

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil - Vanda</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/assets/styles/index.css">
+</head>
+<body>
+
+    <div class="container">
+        
+        <header>
+            <a href="../confeccao&calcados.html">
+                <button class="icon-btn">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+            </a>
+            <button class="icon-btn">
+                <i class="fa-solid fa-ellipsis"></i>
+            </button>
+        </header>
+
+        <div class="attendant-header">
+            <img src="/assets/images/agente.png" alt="Foto Vanda" class="attendant-photo">
+            <h1 class="attendant-name">Vanda</h1>
+            <p class="attendant-role">Setor: Confecção e Calçados</p>
+            
+            <a href="https://wa.me/SEU_NUMERO" target="_blank" class="contact-btn">
+                <i class="fa-brands fa-whatsapp"></i>
+                Falar no WhatsApp
+            </a>
+        </div>
+
+        <div class="info-card eval-card">
+            <h2 class="eval-title">Avalie meu atendimento</h2>
+            <p class="eval-subtitle">Sua opinião é muito importante!</p>
+
+            <form action="#" method="POST" class="eval-form">
+                
+                <div class="input-group">
+                    <label for="telefone">Seu número de Celular</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="nota">Nota do Atendimento</label>
+                    <select id="nota" name="nota" required>
+                        <option value="" disabled selected>Escolha uma nota...</option>
+                        <option value="5">⭐⭐⭐⭐⭐ Excelente</option>
+                        <option value="4">⭐⭐⭐⭐ Muito Bom</option>
+                        <option value="3">⭐⭐⭐ Bom</option>
+                        <option value="2">⭐⭐ Regular</option>
+                        <option value="1">⭐ Ruim</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="comentario">Comentário</label>
+                    <textarea id="comentario" name="comentario" rows="3" placeholder="Deixe um elogio, crítica ou sugestão..." required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Enviar Avaliação</button>
+            </form>
+        </div>
+
+        <div class="section-title-rodape">Acesse nossas Redes sociais</div>   
+        <div class="social-vertical-list">
+            <a href="#" class="social-pill-btn">
+                <i class="fa-brands fa-instagram" style="color: #E1306C;"></i>
+                <span>Instagram da Loja</span>
+            </a>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,147 @@
+/* =========================================
+   PERFIL DO ATENDENTE & FORMULÁRIO
+   ========================================= */
+
+/* Cabeçalho do Atendente */
+.attendant-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.attendant-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--surface-white);
+    box-shadow: 0 8px 20px var(--shadow-card);
+    margin-bottom: 15px;
+}
+
+.attendant-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+    text-shadow: 0 2px 4px var(--text-shadow);
+}
+
+.attendant-role {
+    font-size: 0.9rem;
+    opacity: 0.85;
+    margin-bottom: 20px;
+}
+
+/* Botão de Contato Direto */
+.contact-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: var(--whatsapp-green);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1rem;
+    width: 90%;
+    box-shadow: 0 6px 15px var(--whatsapp-shadow);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.contact-btn:hover {
+    background-color: var(--whatsapp-green-hover);
+    transform: translateY(-2px);
+}
+
+.contact-btn i {
+    font-size: 1.3rem;
+}
+
+/* Ajustes no Card de Avaliação */
+.eval-card {
+    padding: 25px 20px;
+    margin-top: 10px;
+}
+
+.eval-title {
+    color: var(--card-text-primary);
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.eval-subtitle {
+    color: var(--card-text-secondary);
+    font-size: 0.85rem;
+    margin-bottom: 20px;
+}
+
+/* Estilos do Formulário */
+.eval-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 0.85rem;
+    color: var(--card-text-primary);
+    font-weight: 600;
+    margin-bottom: 6px;
+    margin-left: 5px;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 12px;
+    border: 1px solid var(--card-border-inner);
+    background-color: #f8fafc; /* Fundo bem clarinho para contraste */
+    color: var(--card-text-primary);
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(26, 95, 168, 0.1);
+}
+
+.input-group textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+/* Botão de Enviar */
+.submit-btn {
+    background-color: var(--color-primary);
+    color: #ffffff;
+    border: none;
+    padding: 14px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.submit-btn:hover {
+    background-color: var(--color-primary-mid);
+    transform: translateY(-2px);
+}

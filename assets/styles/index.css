@@ -3,6 +3,9 @@
     ========================================= */
 @import url('cores.css');
 @import url('funcionar_perfil.css');
+@import url('carrossel.css');
+@import url('links.css');
+
 
 /* Reset Básico */
 * {
@@ -59,7 +62,20 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 20px;
+}
+
+.header-logo img {
+    height: 60px;
+    width: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.header-logo:hover {
+    opacity: 0.8;
+    transition: 0.3s;
 }
 
 .icon-btn {
@@ -78,6 +94,39 @@ header {
 
 .icon-btn:hover {
     background: var(--surface-overlay-hover);
+}
+
+.section-title {
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.sub-title {
+    text-align: center;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+.section-title-rodape {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 8px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.sub-title-rodape {
+    text-align: center;
+    font-weight: 500;
+    font-size: 0.85rem;
+    opacity: 0.8;
 }
 
 /* Perfil */
@@ -109,99 +158,6 @@ header {
     opacity: 0.9;
     line-height: 1.5;
     white-space: pre-line;
-}
-
-/* Lista de Links */
-.links-container {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
-}
-
-.section-title {
-    text-align: center;
-    margin-bottom: 8px;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    letter-spacing: 1px;
-}
-
-.sub-title {
-    text-align: center;
-    margin-bottom: 8px;
-    font-weight: 500;
-    font-size: 0.85rem;
-    opacity: 0.8;
-}
-
-.section-title-rodape {
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 8px;
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: 1rem;
-    letter-spacing: 1px;
-}
-
-.sub-title-rodape {
-    text-align: center;
-    font-weight: 500;
-    font-size: 0.85rem;
-    opacity: 0.8;
-}
-
-/* O Botão */
-.link-btn {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    text-decoration: none;
-    color: var(--text-color);
-    border-radius: 16px;
-    padding: 10px;
-    transition: transform 0.2s, background 0.3s, border-color 0.3s;
-    aspect-ratio: 1 / 1;
-    position: relative;
-    overflow: hidden;
-}
-
-.link-btn:hover {
-    background-color: var(--btn-hover);
-    transform: translate(-5px);
-    border-color: var(--text-color);
-    box-shadow: 0 5px 15px var(--shadow-card);
-}
-
-.link-thumb {
-    width: 100%;
-    height: 75%;
-    flex: 1;
-    border-radius: 12px;
-    overflow: hidden;
-    margin-bottom: 8px;
-    border: none;
-    display: flex;
-    box-shadow: 0 4px 6px var(--shadow-card);
-}
-
-.link-thumb img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.link-text {
-    width: 100%;
-    height: 25%;
-    text-align: center;
-    font-weight: 600;
-    font-size: 0.85rem;
-    line-height: 1.2;
-    text-shadow: 0 1px 2px var(--shadow-card);
 }
 
 .footer-logo {
@@ -246,17 +202,18 @@ header {
 .collab-card {
     width: 100%;
     box-sizing: border-box;
-    background-color: var(--surface-white);
+    background-color: var(--collab-card);
     border-radius: 20px;
-    padding: 10px 15px;
+    padding: 20px 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 4px 15px var(--shadow-card-light);
+    box-shadow: 0 4px 10px var( --cta-text );
     transition: transform 0.2s ease;
     text-decoration: none;
     color: inherit;
     cursor: pointer;
+    z-index: 1;
 }
 
 .collab-card:hover {
@@ -270,8 +227,8 @@ header {
 }
 
 .collab-avatar {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid var(--card-border-inner);
@@ -285,10 +242,14 @@ header {
 
 .collab-info h3 {
     font-family: sans-serif;
-    font-size: 18px;
+    font-size: 24px;
     color: var(--card-text-primary);
     font-weight: 700;
     margin: 0;
+    border-bottom: 2px solid #A9B0B7;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    width: 100%;
 }
 
 .collab-info span {
@@ -299,15 +260,15 @@ header {
 }
 
 .whatsapp-icon {
-    width: 32px;
-    height: 32px;
+    width: 52px;
+    height: 52px;
     background-color: var(--whatsapp-green);
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--text-color);
-    font-size: 18px;
+    font-size: 42px;
     box-shadow: 0 2px 5px var(--whatsapp-shadow);
     transition: background-color 0.3s;
 }

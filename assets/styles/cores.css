@@ -16,7 +16,7 @@
     /* ── Background Container ── */
     --bg-container-top:     #1a5fa8;
     --bg-container-mid:     #0e4480;
-    --bg-container-bottom:  #082d5e;
+    --bg-container-bottom:  #030f1f;
 
     /* ── Texto ── */
     --text-color:           #ffffff;
@@ -38,7 +38,7 @@
     --shadow-card-deep:     rgba(0, 0, 0, 0.15);
 
     /* ── Texto em Cards Brancos ── */
-    --card-text-primary:    #0f172a;
+    --card-text-primary:    #f0f0f0;
     --card-text-secondary:  #64748b;
     --card-border-inner:    #f0f0f0;
 
@@ -51,4 +51,5 @@
     --cta-bg:               #ffffff;
     --cta-bg-hover:         #f0f0f0;
     --cta-text:             #000000;
+    --collab-card:          #1b314e;
 }

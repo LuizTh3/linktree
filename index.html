@@ -16,17 +16,33 @@
         
         <!-- CABEÇALHO -->
         <header>
-            <button class="icon-btn" onclick="alert('Link copiado!')">
-                <i class="fa-solid fa-share-nodes"></i>
-            </button>
+            <a href="index.html" class="header-logo">
+                <img src="./assets/images/ACRUZEIRENSE.png" alt="A Cruzeirense Matriz">
+            </a>
             <button class="icon-btn">
                 <i class="fa-solid fa-ellipsis"></i>
             </button>
         </header>
 
-        <!-- PERFIL -->
-        <div class="profile-section">
-            <img src="./assets/images/matriz.png" alt="Banner Matriz" class="profile-banner">
+        <div class="promo-title">
+            <h2>Tudo em um so lugar!</h2>
+            <p>Móveis|Calçados|Roupas</p>
+            <p>Tecidos e muito mais!</p>
+        </div>
+
+        <div class="carousel-container">
+            <div class="carousel-track" id="promo-carousel">
+                <img src="./assets/images/promo1.png" alt="Promoção 1" class="carousel-slide">
+                <img src="./assets/images/promo2.jpg" alt="Promoção 2" class="carousel-slide">
+                <img src="./assets/images/promo3.webp" alt="Promoção 3" class="carousel-slide">
+            </div>
+            
+            <button class="carousel-btn prev" onclick="moveSlide(-1)">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="carousel-btn next" onclick="moveSlide(1)">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
         </div>
 
         <div class="section-title">Nossos setores</div>   
@@ -34,44 +50,55 @@
 
         <!-- LISTA DE LINKS -->
         <div class="links-container">
-            
-            <!-- Link 1 -->
-            <a href="./pages/confeccao&calcados.html" class="link-btn">
-                <div class="link-thumb">
-                    <img src="./assets/images/calcados.jpg" alt="Icone">
+            <a href="./pages/moveis&eletro.html" class="new-card-btn">
+                <img src="./assets/images/moveis.jpg" alt="Setor de Móveis" class="new-card-img">
+                <div class="new-card-body">
+                    <h3 class="new-card-title">Setor de móveis</h3>
+                    <span class="new-card-tags">Modern . Design . practicality .</span>
+                    <p class="new-card-desc">Transforme sua casa com móveis que unem conforto e sofisticação.</p>
+                    <div class="new-card-action">Acesse agora</div>
                 </div>
-                <span class="link-text">Confecção e Calçados</span>
             </a>
 
-            <!-- Link 2 -->
-            <a href="./pages/moveis&eletro.html" class="link-btn">
-                <div class="link-thumb">
-                    <img src="./assets/images/moveis.jpg" alt="Icone">
+            <a href="./pages/confeccao&calcados.html" class="new-card-btn">
+                <img src="./assets/images/calcados.jpg" alt="Confecção e Calçados" class="new-card-img">
+                <div class="new-card-body">
+                    <h3 class="new-card-title">Confecção e Calçados</h3>
+                    <span class="new-card-tags">Estilo . Conforto . Moda .</span>
+                    <p class="new-card-desc">Encontre as melhores peças para renovar o seu guarda-roupa.</p>
+                    <div class="new-card-action">Acesse agora</div>
                 </div>
-                <span class="link-text">Móveis e Eletrodemésticos</span>
             </a>
 
-            <!-- Link 3 -->
-            <a href="./pages/tercidos.html" class="link-btn">
-                <div class="link-thumb">
-                    <img src="./assets/images/tecidos.jpg" alt="Icone">
+            <a href="./pages/tercidos.html" class="new-card-btn">
+                <img src="./assets/images/tecidos.jpg" alt="Tecidos" class="new-card-img">
+                <div class="new-card-body">
+                    <h3 class="new-card-title">Tecidos, Cama, Mesa e Banho</h3>
+                    <span class="new-card-tags">Estilo . Conforto . Moda .</span>
+                    <p class="new-card-desc">Encontre as melhores peças para renovar o seu guarda-roupa.</p>
+                    <div class="new-card-action">Acesse agora</div>
                 </div>
-                <span class="link-text">Tecidos, Cama, Mesa e Banho</span>
+            </a>    
+
+            <a href="./pages/pagamento&fatura.html" class="new-card-btn">
+                <img src="./assets/images/financeiro.jpg" alt="Pagamentos de Faturas" class="new-card-img">
+                <div class="new-card-body">
+                    <h3 class="new-card-title">Pagamentos de faturas</h3>
+                    <span class="new-card-tags">Estilo . Conforto . Moda .</span>
+                    <p class="new-card-desc">Encontre as melhores peças para renovar o seu guarda-roupa.</p>
+                    <div class="new-card-action">Acesse agora</div>
+                </div>
             </a>
 
-            <a href="./pages/pagamento&fatura.html" class="link-btn">
-                <div class="link-thumb">
-                    <img src="./assets/images/financeiro.jpg" alt="Icone">
+            <a href="./pages/negociacoes.html" class="new-card-btn">
+                <img src="./assets/images/negociacao.jpg" alt="Pagamentos de Faturas" class="new-card-img">
+                <div class="new-card-body">
+                    <h3 class="new-card-title">Setor de negociações</h3>
+                    <span class="new-card-tags">Estilo . Conforto . Moda .</span>
+                    <p class="new-card-desc">Encontre as melhores peças para renovar o seu guarda-roupa.</p>
+                    <div class="new-card-action">Acesse agora</div>
                 </div>
-                <span class="link-text">Pagamentos de faturas</span>
             </a>
-            <a href="./pages/negociacoes.html" class="link-btn">
-                <div class="link-thumb">
-                    <img src="./assets/images/negociacao.jpg" alt="Icone">
-                </div>
-                <span class="link-text">Setor de negociações</span>
-            </a>
-
         </div>
 
         <div class="section-title-rodape">Acesse nossas Redes sociais</div>   
@@ -102,5 +129,6 @@
 
     </div>
 
+    <script src="./assets/js/index/carrossel.js"></script>
 </body>
 </html>

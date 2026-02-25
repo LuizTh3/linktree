@@ -33,6 +33,7 @@ body {
 
 /* CONTAINER PRINCIPAL (Mobile First) */
 .container {
+    position: relative;
     max-width: 480px;
     margin: 0 auto;
     min-height: 100vh;
@@ -73,13 +74,21 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 11;
+    pointer-events: none;
+}
+
+.header-logo {
+    pointer-events: auto;
+    flex-shrink: 0;
 }
 
 .header-logo img {
-    height: 60px;
+    height: clamp(40px, 12vw, 60px);
     width: auto;
     display: block;
     object-fit: contain;
+    transition: height 0.1s ease-out;
 }
 
 .header-logo:hover {

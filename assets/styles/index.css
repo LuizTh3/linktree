@@ -2,6 +2,7 @@
     IMPORTA O TEMA DE CORES
     ========================================= */
 @import url('cores.css');
+@import url('../fonts/fonts.css');
 @import url('funcionar_perfil.css');
 @import url('carrossel.css');
 @import url('links.css');
@@ -42,8 +43,8 @@ body {
         var(--bg-container-mid)    40%,
         var(--bg-container-bottom) 100%
     );
-
-    padding: 24px 20px;
+    padding: 0; /* Removemos o padding global para o Hero encostar nas bordas */
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,13 +58,21 @@ body {
           10px 0 50px var(--shadow-lateral);
 }
 
+.container > *:not(.hero-section) {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
 /* Cabeçalho */
 header {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    padding: 15px 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
 }
 
 .header-logo img {
@@ -97,18 +106,21 @@ header {
 }
 
 .section-title {
-    text-align: center;
-    font-weight: 700;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    font-weight: 900;
     text-transform: uppercase;
     font-size: 1.5rem;
     letter-spacing: 1px;
 }
 
 .sub-title {
-    text-align: center;
+    text-align: left;
+    width: 100%;
     margin-bottom: 8px;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 1.1rem;
     opacity: 0.8;
 }
 
@@ -116,7 +128,8 @@ header {
     text-align: center;
     margin-top: 40px;
     margin-bottom: 8px;
-    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
     text-transform: uppercase;
     font-size: 1rem;
     letter-spacing: 1px;

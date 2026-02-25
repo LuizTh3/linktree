@@ -3,6 +3,9 @@
    ========================================= */
 
 /* Mantemos o grid de 2 colunas */
+
+@import url('../fonts/fonts.css');
+
 .links-container {
     width: 100%;
     display: grid;
@@ -47,6 +50,7 @@
 /* Título */
 .new-card-title {
     color: #ffffff;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.1rem;
     font-weight: 600;
     margin: 0 0 2px 0;

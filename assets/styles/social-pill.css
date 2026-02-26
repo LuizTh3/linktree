@@ -18,7 +18,7 @@
     position: relative; 
     width: 100%;
     padding: 18px 25px;
-    background-color: var(--surface-white);
+    background-color: var(--cta-bg-hover);
     color: var(--texto-social);
     text-decoration: none;
     border-radius: 16px; 
@@ -29,7 +29,8 @@
 }
 
 .social-pill-btn:hover {
-    background-color: var(--surface-overlay-hover);
+    background-color: var(--cta-bg);
+    filter: brightness(1.1);
     transform: translateY(-3px);
     box-shadow: 0 10px 20px var(--shadow-card);
 }

@@ -1,0 +1,81 @@
+/* =========================================
+            SEÇÃO DE REDES SOCIAIS
+   ========================================= */
+@import url('cores.css');
+@import url('../fonts/fonts.css');
+
+.social-vertical-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    margin: 25px 0;
+}
+
+.social-pill-btn {
+    display: flex;
+    align-items: center;
+    position: relative; 
+    width: 100%;
+    padding: 18px 25px;
+    background-color: var(--surface-white);
+    color: var(--texto-social);
+    text-decoration: none;
+    border-radius: 16px; 
+    font-weight: 700;
+    font-size: 1rem;
+    border: 1px solid var(--border-subtle);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.social-pill-btn:hover {
+    background-color: var(--surface-overlay-hover);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px var(--shadow-card);
+}
+
+
+.social-pill-btn i {
+    margin-right: 15px;
+    font-size: 1.6rem;
+    transition: transform 0.3s ease;
+}
+
+.social-pill-btn:hover i {
+    transform: scale(1.2);
+}
+
+.social-pill-btn span {
+    flex-grow: 1;
+    text-align: center;
+    margin-right: 30px;
+}
+
+.footer-logo {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.footer-logo .social-pill-btn {
+    background: linear-gradient(135deg, #082d5e, #1a5fa8);
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    border: none;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.footer-logo .social-pill-btn span{
+    margin-right: 0;
+    width: auto;
+}
+
+.footer-logo .social-pill-btn:hover {
+    filter: brightness(1.1);
+    box-shadow: 0 8px 25px rgba(0, 86, 179, 0.4);
+}

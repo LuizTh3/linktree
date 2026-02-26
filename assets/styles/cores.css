@@ -20,6 +20,7 @@
 
     /* ── Texto ── */
     --text-color:           #ffffff;
+    --texto-social:         #333;
     --text-shadow:          rgba(0, 0, 0, 0.3);
 
     /* ── Superfícies / Cards ── */
@@ -29,7 +30,7 @@
     --surface-overlay-light:rgba(255, 255, 255, 0.2);
 
     /* ── Bordas ── */
-    --border-subtle:        rgba(255, 255, 255, 0.07);
+    --border-subtle:        rgba(0,0,0,0.05);
 
     /* ── Sombras ── */
     --shadow-lateral:       rgba(0, 0, 0, 0.5);

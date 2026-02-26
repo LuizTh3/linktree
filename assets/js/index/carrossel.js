@@ -16,4 +16,4 @@ let currentSlide = 0;
         // Opcional: Faz o carrossel passar as fotos sozinho a cada 3 segundos
         setInterval(() => {
             moveSlide(1);
-        }, 3000);
+        }, 4500);

@@ -6,6 +6,7 @@
 @import url('funcionar_perfil.css');
 @import url('carrossel.css');
 @import url('links.css');
+@import url('social-pill.css');
 
 
 /* Reset Básico */
@@ -135,19 +136,19 @@ header {
 
 .section-title-rodape {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 8px;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 1.1rem;
     letter-spacing: 1px;
 }
 
 .sub-title-rodape {
     text-align: center;
     font-weight: 500;
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     opacity: 0.8;
 }
 
@@ -324,77 +325,4 @@ header {
     font-size: 1rem;
     color: var(--card-text-secondary);
     line-height: 1.5;
-}
-
-/* =========================================
-            SEÇÃO DE REDES SOCIAIS
-   ========================================= */
-
-.social-vertical-list {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    width: 100%;
-    margin-top: 10px;
-}
-
-.social-pill-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative; /* Permite fixar o ícone e centralizar o texto */
-    width: 100%;
-    padding: 16px 20px;
-    background-color: var(--surface-overlay);
-    color: var(--text-color);
-    text-decoration: none;
-    border-radius: 50px; 
-    font-weight: 600;
-    font-size: 1rem;
-    letter-spacing: 0.5px;
-    border: 1px solid var(--border-subtle);
-    
-    /* Efeito de Vidro Fosco (Glassmorphism) */
-    backdrop-filter: blur(8px); 
-    -webkit-backdrop-filter: blur(8px);
-    
-    transition: transform 0.2s ease, background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.social-pill-btn:hover {
-    background-color: var(--surface-overlay-hover);
-    transform: translateY(-3px); /* Leve elevação ao passar o mouse */
-    box-shadow: 0 8px 15px var(--shadow-card);
-    border-color: rgba(255, 255, 255, 0.2);
-}
-
-/* Fixando o ícone à esquerda para o texto ficar perfeitamente centralizado */
-.social-pill-btn i {
-    position: absolute;
-    left: 24px;
-    font-size: 1.4rem;
-}
-
-.social-pill-btn span {
-    text-align: center;
-    width: 100%;
-}
-
-.footer-logo {
-    width: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.footer-logo .social-pill-btn {
-    background-color: transparent;
-    border: 1px dashed var(--surface-overlay-light);
-    font-size: 0.9rem;
-    padding: 12px;
-    color: var(--surface-overlay-hover);
-}
-
-.footer-logo .social-pill-btn:hover {
-    background-color: var(--surface-overlay);
-    color: var(--text-color);
 }

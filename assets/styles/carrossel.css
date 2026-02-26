@@ -28,7 +28,7 @@
 .carousel-container {
     position: relative;
     width: 100%;
-    max-width: 400px; /* Proporção */
+    max-width: 360px; /* Proporção */
     margin: 0 auto 24px auto;
     overflow: hidden;
     border-radius: 12px;
